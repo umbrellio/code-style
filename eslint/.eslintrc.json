@@ -1,0 +1,9 @@
+{
+  "extends": "./index.js",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "quote-props": 0
+  }
+}
