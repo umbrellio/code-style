@@ -14,7 +14,9 @@ module.exports = {
       before: true,
       after: true
     }],
-    'arrow-parens': 'error',
+    'arrow-parens': ['error', 'as-needed', {
+      requireForBlockBody: true
+    }],
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', {
       allowSingleLine: true
