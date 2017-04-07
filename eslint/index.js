@@ -290,7 +290,15 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
-    'react/sort-comp': 'error',
+    'react/sort-comp': ['error', {
+      order: [
+        'type-annotations',
+        'static-methods',
+        'lifecycle',
+        'everything-else',
+        'render'
+      ]
+    }],
 
     'jsx-a11y/img-has-alt': 'error',
     'jsx-a11y/img-redundant-alt': 'error',
