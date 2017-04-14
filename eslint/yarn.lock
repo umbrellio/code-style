@@ -1038,3 +1038,10 @@ write@^0.2.1:
 xtend@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+
+yamljs@^0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/yamljs/-/yamljs-0.2.9.tgz#bd3bdaa62ac09deb2a2e1ce803eeb4217b52a82f"
+  dependencies:
+    argparse "^1.0.7"
+    glob "^7.0.5"

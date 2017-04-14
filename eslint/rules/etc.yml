@@ -1,0 +1,7 @@
+rules:
+  prefer-object-spread/prefer-object-spread: error
+
+  node/no-deprecated-api: error
+  node/process-exit-as-throw: error
+
+  promise/param-names: error

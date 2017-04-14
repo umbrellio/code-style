@@ -1,4 +1,5 @@
 /node_modules/
+/rules/*.yml
 /.eslintrc.json
 /.gitignore
 /yarn.lock
