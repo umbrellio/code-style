@@ -1,0 +1,57 @@
+inherit_gem:
+  rubocop-config-umbrellio: lib/rubocop.yml
+
+# Metrics
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
+
+Metrics/LineLength:
+  Exclude:
+    - config/initializers/*
+    - config/environments/*
+    - lib/**/tasks/**/*
+
+# Rails
+
+Rails:
+  Enabled: true
+
+Rails/Delegate:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/HttpPositionalArguments:
+  # rails 5 feature https://github.com/bbatsov/rubocop/issues/3629
+  Enabled: false
+
+Rails/OutputSafety:
+  Enabled: false
+
+Rails/Validation:
+  Enabled: false
+
+Rails/SaveBang:
+  # Disabled by default
+  Enabled: true
+
+# Style
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+
+Style/HashSyntax:
+  Exclude:
+    - lib/**/tasks/**/*
+
+
+Style/SymbolArray:
+  Exclude:
+    - apps/**/*controller.rb
+    - spec/**/*controller_spec.rb
+    - config/routes.rb
+    - db/migrate/**/*
