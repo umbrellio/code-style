@@ -5,29 +5,29 @@ module.exports = {
     'react',
     'jsx-a11y',
     'promise',
-    'node'
+    'node',
   ],
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'arrow-spacing': ['error', {
       before: true,
-      after: true
+      after: true,
     }],
     'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: true
+      requireForBlockBody: true,
     }],
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', {
-      allowSingleLine: true
+      allowSingleLine: true,
     }],
     'camelcase': ['error', {
-      properties: 'never'
+      properties: 'never',
     }],
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error', {
       before: false,
-      after: true
+      after: true,
     }],
     'comma-style': ['error', 'last'],
     'constructor-super': 'error',
@@ -39,19 +39,19 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
     'generator-star-spacing': ['error', {
       before: false,
-      after: true
+      after: true,
     }],
     'handle-callback-err': ['error', '^(err|error)$' ],
     'indent': ['error', 2, {
-      SwitchCase: 1
+      SwitchCase: 1,
     }],
     'key-spacing': ['error', {
       beforeColon: false,
-      afterColon: true
+      afterColon: true,
     }],
     'keyword-spacing': ['error', {
       before: true,
-      after: true
+      after: true,
     }],
     'max-len': ['error', 100],
     'new-cap': 'error',
@@ -64,7 +64,7 @@ module.exports = {
     'no-confusing-arrow': 'error',
     'no-const-assign': 'error',
     'no-constant-condition': ['error', {
-      checkLoops: false
+      checkLoops: false,
     }],
     'no-control-regex': 'error',
     'no-debugger': 'error',
@@ -93,7 +93,7 @@ module.exports = {
     'no-label-var': 'error',
     'no-labels': ['error', {
       allowLoop: false,
-      allowSwitch: false
+      allowSwitch: false,
     }],
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
@@ -101,16 +101,16 @@ module.exports = {
       groups: [
           ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
-          ['in', 'instanceof']
+          ['in', 'instanceof'],
       ],
-      allowSamePrecedence: true
+      allowSamePrecedence: true,
     }],
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-multiple-empty-lines': ['error', {
       max: 1,
-      maxEOF: 0
+      maxEOF: 0,
     }],
     'no-negated-in-lhs': 'error',
     'no-nested-ternary': 'error',
@@ -147,7 +147,7 @@ module.exports = {
     'no-unexpected-multiline': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': ['error', {
-      defaultAssignment: false
+      defaultAssignment: false,
     }],
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
@@ -155,17 +155,17 @@ module.exports = {
     'no-unused-expressions': ['error', {
       allowShortCircuit: true,
       allowTernary: true,
-      allowTaggedTemplates: true
+      allowTaggedTemplates: true,
     }],
     'no-unused-vars': ['error', {
       vars: 'all',
       args: 'none',
-      ignoreRestSiblings: true
+      ignoreRestSiblings: true,
     }],
     'no-use-before-define': ['error', {
       functions: false,
       classes: false,
-      variables: false
+      variables: false,
     }],
     'no-useless-call': 'error',
     'no-useless-computed-key': 'error',
@@ -176,22 +176,22 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-property-newline': ['error', {
-      allowMultiplePropertiesPerLine: true
+      allowMultiplePropertiesPerLine: true,
     }],
     'object-shorthand': 'error',
     'one-var': ['error', {
-      initialized: 'never'
+      initialized: 'never',
     }],
     'operator-linebreak': ['error', 'after', {
       overrides: {
         '?': 'before',
-        ':': 'before'
-      }
+        ':': 'before',
+      },
     }],
     'padded-blocks': ['error', {
       blocks: 'never',
       switches: 'never',
-      classes: 'never'
+      classes: 'never',
     }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
@@ -201,7 +201,7 @@ module.exports = {
     'prefer-template': 'error',
     'quotes': ['error', 'single', {
       avoidEscape: true,
-      allowTemplateLiterals: true
+      allowTemplateLiterals: true,
     }],
     'quote-props': ['error', 'as-needed'],
     'radix': 'error',
@@ -209,7 +209,7 @@ module.exports = {
     'semi': ['error', 'never'],
     'semi-spacing': ['error', {
       before: false,
-      after: true
+      after: true,
     }],
     'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': ['error', 'always'],
@@ -217,17 +217,17 @@ module.exports = {
     'space-infix-ops': 'error',
     'space-unary-ops': ['error', {
       words: true,
-      nonwords: false
+      nonwords: false,
     }],
     'spaced-comment': ['error', 'always', {
       line: {
-        markers: ['*package', '!', '/', ',']
+        markers: ['*package', '!', '/', ','],
       },
       block: {
         balanced: true,
         markers: ['*package', '!', ',', ':', '::', 'flow-include'],
-        exceptions: ['*']
-      }
+        exceptions: ['*'],
+      },
     }],
     'symbol-description': 'error',
     'template-curly-spacing': ['error', 'never'],
@@ -235,10 +235,10 @@ module.exports = {
     'unicode-bom': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': ['error', {
-      requireStringLiterals: true
+      requireStringLiterals: true,
     }],
     'wrap-iife': ['error', 'inside', {
-      functionPrototypeMethods: true
+      functionPrototypeMethods: true,
     }],
     'yield-star-spacing': ['error', 'both'],
     'yoda': ['error', 'never'],
@@ -269,7 +269,7 @@ module.exports = {
     'react/jsx-no-bind': ['error', {
       allowArrowFunctions: true,
       allowBind: false,
-      ignoreRefs: true
+      ignoreRefs: true,
     }],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
@@ -296,13 +296,13 @@ module.exports = {
         'static-methods',
         'lifecycle',
         'everything-else',
-        'render'
-      ]
+        'render',
+      ],
     }],
 
     'jsx-a11y/img-has-alt': 'error',
     'jsx-a11y/img-redundant-alt': 'error',
     'jsx-a11y/aria-role': 'error',
-    'jsx-a11y/no-access-key': 'error'
-  }
+    'jsx-a11y/no-access-key': 'error',
+  },
 }
