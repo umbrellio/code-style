@@ -43,11 +43,9 @@ Rails/SaveBang:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-
 Style/HashSyntax:
   Exclude:
     - lib/**/tasks/**/*
-
 
 Style/SymbolArray:
   Exclude:
