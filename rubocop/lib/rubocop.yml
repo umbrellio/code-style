@@ -19,9 +19,6 @@ Lint/NonLocalExitFromIterator:
 Lint/HandleExceptions:
   Enabled: false
 
-Lint/RescueException:
-  Enabled: false
-
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
 
