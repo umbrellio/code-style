@@ -73,7 +73,9 @@ rules:
   no-caller: error
   no-class-assign: error
   no-cond-assign: error
-  no-confusing-arrow: error
+  no-confusing-arrow:
+    - error
+    - allowParens: true
   no-const-assign: error
   no-constant-condition:
     - error
