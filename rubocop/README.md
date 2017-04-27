@@ -6,8 +6,7 @@ This gem provides default rubocop settings for Umbrellio projects
 1. Add `gem 'rubocop-config-umbrellio'` into your Gemfile
 
   To test this gem before release, you can add
-  `gem 'rubocop-config-umbrellio', github: 'umbrellio/code-style', branch: 'master'`
-  instead.
+  `gem 'rubocop-config-umbrellio', github: 'umbrellio/code-style'` instead.
 
   Do `$ bundle install`. If it fails, run `$ bundle update rubocop rubocop-rspec` instead
 
