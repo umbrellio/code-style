@@ -73,7 +73,9 @@ rules:
   no-caller: error
   no-class-assign: error
   no-cond-assign: error
-  no-confusing-arrow: error
+  no-confusing-arrow:
+    - error
+    - allowParens: true
   no-const-assign: error
   no-constant-condition:
     - error
@@ -194,6 +196,9 @@ rules:
   no-useless-return: error
   no-whitespace-before-property: error
   no-with: error
+  object-curly-spacing:
+    - error
+    - always
   object-property-newline:
     - error
     - allowMultiplePropertiesPerLine: true
