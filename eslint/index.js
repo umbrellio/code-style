@@ -1,16 +1,18 @@
 module.exports = {
   plugins: [
+    'flowtype',
     'import',
-    'prefer-object-spread',
-    'react',
     'jsx-a11y',
-    'promise',
     'node',
+    'prefer-object-spread',
+    'promise',
+    'react',
   ],
   extends: [
     './rules/es6',
     './rules/etc',
     './rules/import',
     './rules/react',
+    './rules/flowtype',
   ].map(require.resolve),
 }

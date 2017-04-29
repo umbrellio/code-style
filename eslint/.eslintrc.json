@@ -4,6 +4,7 @@
     "node": true
   },
   "rules": {
-    "quote-props": 0
+    "quote-props": 0,
+    "max-len": ["error", 80]
   }
 }
