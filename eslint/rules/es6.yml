@@ -5,10 +5,6 @@ rules:
     - error
     - before: true
       after: true
-  arrow-parens:
-    - error
-    - as-needed
-    - requireForBlockBody: true
   block-spacing:
     - error
     - always
