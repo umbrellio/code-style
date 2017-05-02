@@ -1,4 +1,10 @@
 rules:
+  curry/arrow-parens:
+    - error
+    - as-needed
+    - requireForBlockBody: true
+      curry: never
+
   prefer-object-spread/prefer-object-spread: error
 
   node/no-deprecated-api: error
