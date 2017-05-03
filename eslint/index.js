@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    'curry',
     'flowtype',
     'import',
     'jsx-a11y',
