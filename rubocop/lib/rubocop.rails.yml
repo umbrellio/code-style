@@ -4,8 +4,10 @@ inherit_gem:
 # Metrics
 
 Metrics/BlockLength:
+  # TODO: use 'ExcludedMethods' config which is more selective
   Exclude:
     - config/routes.rb
+    - spec/**/*
 
 Metrics/LineLength:
   Exclude:
@@ -37,6 +39,23 @@ Rails/Validation:
 Rails/SaveBang:
   # Disabled by default
   Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: true
+  Blacklist:
+    - decrement!
+    - decrement_counter
+    - increment!
+    - increment_counter
+    - toggle!
+    - touch
+    # allow update_all
+    # - update_all
+    - update_attribute
+    - update_column
+    - update_columns
+    - update_counters
+
 
 # Style
 
