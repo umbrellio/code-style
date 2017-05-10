@@ -6,11 +6,11 @@ Gem::Specification.new do |spec|
   # x.y.z.t
   # Where x.y.z = rubocop version
   # t is incremental
-  spec.version = "0.48.1.1"
+  spec.version = "0.48.1.2"
   spec.authors = ["JelF"]
   spec.email = ["begdory4@gmail.com"]
 
-  spec.summary = "This gem provides default rubocop settings for umbrelio projects"
+  spec.summary = "This gem provides default rubocop settings for Umbrellio projects"
   spec.homepage = "https://github.com/umbrellio/code-style"
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
