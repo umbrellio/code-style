@@ -194,10 +194,6 @@ Style/StringLiteralsInInterpolation:
 Style/SpaceInsideBrackets:
   Enabled: false
 
-Style/SymbolArray:
-  # Disabled by default
-  Enabled: true
-
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
