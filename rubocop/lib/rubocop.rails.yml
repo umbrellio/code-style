@@ -65,10 +65,3 @@ Style/ClassAndModuleChildren:
 Style/HashSyntax:
   Exclude:
     - lib/**/tasks/**/*
-
-Style/SymbolArray:
-  Exclude:
-    - apps/**/*controller.rb
-    - spec/**/*controller_spec.rb
-    - config/routes.rb
-    - db/migrate/**/*
