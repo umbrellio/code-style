@@ -1,5 +1,8 @@
 rules:
   accessor-pairs: error
+  allow-parens:
+    - as-needed
+    - requireForBlockBody: false
   array-callback-return: error
   arrow-spacing:
     - error
