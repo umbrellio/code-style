@@ -2,7 +2,7 @@ rules:
   curry/arrow-parens:
     - error
     - as-needed
-    - requireForBlockBody: true
+    - requireForBlockBody: false
       curry: never
 
   prefer-object-spread/prefer-object-spread: error
