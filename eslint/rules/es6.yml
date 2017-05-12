@@ -64,7 +64,7 @@ rules:
     - 100
   new-cap: error
   new-parens: error
-  newline-per-chained-call: error
+  newline-per-chained-call: off
   no-array-constructor: error
   no-caller: error
   no-class-assign: error
