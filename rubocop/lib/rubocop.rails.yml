@@ -60,7 +60,8 @@ Rails/SkipsModelValidations:
 # Style
 
 Style/ClassAndModuleChildren:
-  Enabled: false
+  Enabled: true
+  EnforcedStyle: compact
 
 Style/HashSyntax:
   Exclude:

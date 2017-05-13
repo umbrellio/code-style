@@ -104,6 +104,10 @@ Style/AndOr:
   # `do_something and return`
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  # Enable it in non-rails projects with EnforcedStyle you prefer
+  Enabled: false
+
 Style/CommentAnnotation:
   # Also, i think that better to use yard's `@todo` and other in ruby code
   Enabled: false
