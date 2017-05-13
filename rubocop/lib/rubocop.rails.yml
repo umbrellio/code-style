@@ -15,6 +15,9 @@ Metrics/LineLength:
     - config/environments/*
     - lib/**/tasks/**/*
 
+Metrics/MethodLength:
+  Exclude: db/**/*
+
 # Rails
 
 Rails:
