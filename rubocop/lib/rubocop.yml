@@ -11,7 +11,7 @@ Lint/AmbiguousBlockAssociation:
   Enabled: false
 
 Lint/AmbiguousOperator:
-  Enabled: true
+  Enabled: false
 
 Lint/NonLocalExitFromIterator:
   Enabled: false
