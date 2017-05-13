@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   # x.y.z.t
   # Where x.y.z = rubocop version
   # t is incremental
-  spec.version = "0.48.1.2"
+  spec.version = "0.48.1.3"
   spec.authors = ["JelF"]
   spec.email = ["begdory4@gmail.com"]
 
