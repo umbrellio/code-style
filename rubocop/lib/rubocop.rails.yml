@@ -59,7 +59,6 @@ Rails/SkipsModelValidations:
     - update_columns
     - update_counters
 
-
 # Style
 
 Style/ClassAndModuleChildren:

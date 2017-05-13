@@ -206,5 +206,4 @@ Style/TrailingCommaInLiteral:
 
 Style/TrivialAccessors:
   AllowPredicates: true
-  # REWIEW: Why don't we disable it?
   Enabled: false
