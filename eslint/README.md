@@ -9,7 +9,27 @@ yarn add -D eslint-config-umbrellio
 Install peer dependencies if you already haven't:
 
 ```
-yarn add -D eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prefer-object-spread eslint-plugin-promise eslint-plugin-react eslint-plugin-flowtype eslint-plugin-curry
+yarn add -D eslint-plugin-import eslint-plugin-node eslint-plugin-prefer-object-spread eslint-plugin-promise eslint-plugin-curry
 ```
 
-Add `umbrellio` to "extends" section of ESLint config.
+Add `umbrellio` to "extends" section of ESLint config:
+
+```json
+{
+  "extends": "umbrellio"
+}
+```
+
+You can also enable optional configs:
+
+```json
+{
+  "extends": [
+    "umbrellio",
+    "umbrellio/flow",
+    "umbrellio/react"
+  ]
+}
+```
+
+Note that React config requires `eslint-plugin-react` and `eslint-plugin-jsx-a11y`, and Flow config requires `eslint-plugin-flowtype`.
