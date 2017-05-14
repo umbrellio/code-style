@@ -25,7 +25,11 @@ rules:
   react/jsx-no-duplicate-props: error
   react/jsx-no-undef: error
   react/jsx-pascal-case: error
-  react/jsx-space-before-closing: error
+  react/jsx-tag-spacing:
+    - error
+    - closingSlash: never
+      beforeSelfClosing: always
+      afterOpening: never
   react/jsx-uses-react: error
   react/jsx-uses-vars: error
   react/jsx-wrap-multilines: error
@@ -49,7 +53,7 @@ rules:
       - everything-else
       - render
 
-  jsx-a11y/img-has-alt: error
+  jsx-a11y/alt-text: error
   jsx-a11y/img-redundant-alt: error
   jsx-a11y/aria-role: error
   jsx-a11y/no-access-key: error

@@ -16,11 +16,11 @@
     "eslint-plugin-curry": "^0.1.0",
     "eslint-plugin-flowtype": "^2.32.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-prefer-object-spread": "^1.1.0",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-react": "^7.0.1",
     "yamljs": "^0.2.9"
   },
   "peerDependencies": {
