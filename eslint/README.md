@@ -1,4 +1,5 @@
 # eslint-config-umbrellio
+[![npm version](https://badge.fury.io/js/eslint-config-umbrellio.svg)](https://badge.fury.io/js/eslint-config-umbrellio)
 
 Install with [yarn](https://github.com/yarnpkg/yarn/):
 
