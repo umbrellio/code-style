@@ -1,5 +1,10 @@
 {
-  "extends": "./index.js",
+  "extends": [
+    "./index.js",
+    "./flow.js",
+    "./jest.js",
+    "./react.js"
+  ],
   "env": {
     "node": true
   },

@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## master
+### Added
+- Config for [Jest](https://github.com/facebook/jest).
 ### Changed
 - `newline-per-chained-call` - disabled
 - Split one big config into three separate ones: general, React and Flow.

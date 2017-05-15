@@ -27,9 +27,11 @@ You can also enable optional configs:
   "extends": [
     "umbrellio",
     "umbrellio/flow",
-    "umbrellio/react"
+    "umbrellio/react",
+    "umbrellio/jest"
   ]
 }
 ```
 
-Note that React config requires `eslint-plugin-react` and `eslint-plugin-jsx-a11y`, and Flow config requires `eslint-plugin-flowtype`.
+Note that React config requires `eslint-plugin-react` and `eslint-plugin-jsx-a11y`,
+Jest config requires `eslint-plugin-jest`,  and Flow config requires `eslint-plugin-flowtype`.
