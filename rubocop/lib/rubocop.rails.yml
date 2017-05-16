@@ -16,7 +16,9 @@ Metrics/LineLength:
     - lib/**/tasks/**/*
 
 Metrics/MethodLength:
-  Exclude: db/**/*
+  Exclude:
+    - db/**/*
+    - config/initializers/**/*
 
 # Rails
 
