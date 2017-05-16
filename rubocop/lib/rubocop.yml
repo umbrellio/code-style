@@ -74,7 +74,7 @@ RSpec/LetSetup:
   Enabled: false
 
 RSpec/MessageSpies:
-  EnforcedStyle: receive
+  Enabled: false
 
 RSpec/MultipleDescribes:
   Enabled: false
