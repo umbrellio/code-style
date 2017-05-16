@@ -1,0 +1,20 @@
+{
+  "name": "stylelint-config-umbrellio",
+  "version": "0.1.0",
+  "description": "Stylelint config used for Umbrellio projects",
+  "main": ".stylelintrc.yml",
+  "files": [
+    ".stylelintrc.yml"
+  ],
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "umbrellio"
+  ],
+  "repository": "https://github.com/umbrellio/code-style",
+  "author": "Alexander Komarov <ak@akxcv.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^7.10.1"
+  }
+}
