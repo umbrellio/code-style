@@ -72,7 +72,7 @@ rules:
   declaration-block-semicolon-newline-before: never-multi-line
   declaration-block-semicolon-space-after: always-single-line
   declaration-block-semicolon-space-before: never
-  declaration-block-single-line-max-declarations: 0
+  declaration-block-single-line-max-declarations: 1
   declaration-block-trailing-semicolon: always
   # Blocks
   block-closing-brace-empty-line-before: never
@@ -102,11 +102,11 @@ rules:
   selector-max-empty-lines: 0
   selector-list-comma-newline-after: null
   selector-list-comma-newline-before: null
-  selector-list-comma-space-after: always
+  selector-list-comma-space-after: always-single-line
   selector-list-comma-space-before: never
   # Rules
   rule-empty-line-before:
-    - null # temporary
+    - null # temporary (change to 'always' later)
     - ignore:
       - after-comment
       - inside-block
