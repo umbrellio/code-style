@@ -4,7 +4,24 @@ AllCops:
   Exclude:
     - bin/**/*
 
-# LINT
+# Layout
+
+Layout/AlignParameters:
+  Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideBrackets:
+  Enabled: false
+
+# Lint
 
 Lint/AmbiguousBlockAssociation:
   # `scope :name, -> (param) { ... }` is a valid syntax
@@ -19,8 +36,16 @@ Lint/NonLocalExitFromIterator:
 Lint/HandleExceptions:
   Enabled: false
 
+Lint/RescueType:
+  # It's generally useless, but why not?
+  Enabled: true
+
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
+
+Lint/ScriptPermission:
+  # checks +x on scripts
+  Enabled: true
 
 # Metrics
 
@@ -49,6 +74,9 @@ Metrics/PerceivedComplexity:
   Enabled: false
 
 # Performance
+
+Performance/Caller:
+  Enabled: true
 
 Performance/Casecmp:
   Enabled: false
@@ -97,9 +125,6 @@ Style/AccessorMethodName:
   # This cop assumes every method is accessor
   Enabled: false
 
-Style/AlignParameters:
-  Enabled: true
-
 Style/AndOr:
   # `do_something and return`
   Enabled: false
@@ -131,6 +156,10 @@ Style/EmptyElse:
 Style/Encoding:
   Enabled: false
 
+Style/FormatStringToken:
+  # TODO: i did not test that, should test before relase
+  Enabled: true
+
 Style/IfUnlessModifier:
   Enabled: true
 
@@ -143,14 +172,12 @@ Style/LambdaCall:
 Style/ModuleFunction:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-
-Style/MultilineOperationIndentation:
-  Enabled: false
-
 Style/MultilineTernaryOperator:
   Enabled: false
+
+Style/MultipleComparison:
+  # foo.in? %w[bar baz] instead of foo == 'bar' || foo == 'baz'
+  Enabled: true
 
 Style/NumericLiterals:
   Description: 'Use indent in groups of 3 unlesss you meet project-specific rule'
@@ -179,8 +206,6 @@ Style/RegexpLiteral:
 Style/RescueModifier:
   Enabled: false
 
-Style/SpaceInLambdaLiteral:
-  EnforcedStyle: require_space
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
@@ -195,9 +220,6 @@ Style/SingleLineBlockParams:
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
-Style/SpaceInsideBrackets:
-  Enabled: false
-
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
@@ -206,4 +228,8 @@ Style/TrailingCommaInLiteral:
 
 Style/TrivialAccessors:
   AllowPredicates: true
+  Enabled: false
+
+Style/YodaCondition:
+  # REVIEW: i sure that we don't need it
   Enabled: false

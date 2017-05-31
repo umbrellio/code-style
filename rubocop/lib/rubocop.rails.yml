@@ -25,6 +25,12 @@ Metrics/MethodLength:
 Rails:
   Enabled: true
 
+Rails/ApplicationJob:
+  Enabled: false
+
+Rails/ApplicationRecord:
+  Enabled: false
+
 Rails/Delegate:
   Enabled: false
 
