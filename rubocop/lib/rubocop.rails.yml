@@ -26,9 +26,11 @@ Rails:
   Enabled: true
 
 Rails/ApplicationJob:
+  # Projects which have ApplciationJob abstraction should enable it localy
   Enabled: false
 
 Rails/ApplicationRecord:
+  # Projects which have ApplciationRecord abstraction should enable it localy
   Enabled: false
 
 Rails/Delegate:

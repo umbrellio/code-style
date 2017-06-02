@@ -10,7 +10,7 @@ Layout/AlignParameters:
   Enabled: true
 
 Layout/MultilineMethodCallIndentation:
-  Enabled: false
+  Enabled: true
 
 Layout/MultilineOperationIndentation:
   Enabled: false
@@ -157,7 +157,15 @@ Style/Encoding:
   Enabled: false
 
 Style/FormatStringToken:
-  # TODO: i did not test that, should test before relase
+  # Bad
+  # [7] pry(main)> format "%{foo}", foo: 123
+  # => "123"
+  # Good
+  # [8] pry(main)> format "%<foo>s", foo: 123
+  # => "123"
+  # Also good
+  # [9] pry(main)> format "%<foo>f", foo: 123
+  # => "123.000000"
   Enabled: true
 
 Style/IfUnlessModifier:
