@@ -98,6 +98,9 @@ RSpec/DescribedClass:
 RSpec/DescribeMethod:
   Enabled: false
 
+RSpec/FilePath:
+  Enabled: false
+
 RSpec/LetSetup:
   Enabled: false
 
