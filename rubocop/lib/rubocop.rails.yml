@@ -26,12 +26,11 @@ Rails:
   Enabled: true
 
 Rails/ApplicationJob:
-  # Projects which have ApplciationJob abstraction should enable it localy
-  Enabled: false
+  Enabled: true
 
 Rails/ApplicationRecord:
-  # Projects which have ApplciationRecord abstraction should enable it localy
-  Enabled: false
+  # Use it even you use Sequel
+  Enabled: true
 
 Rails/Delegate:
   Enabled: false
