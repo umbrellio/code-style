@@ -187,7 +187,12 @@ Style/MultilineTernaryOperator:
   Enabled: false
 
 Style/MultipleComparison:
-  # foo.in? %w[bar baz] instead of foo == 'bar' || foo == 'baz'
+  # Bad
+  # if foo == 1 || foo == 2
+  # Good
+  # [1, 2].include?(foo)
+  # With activesupport, this is better
+  # foo.in? [1, 2]
   Enabled: true
 
 Style/NumericLiterals:
