@@ -4,7 +4,24 @@ AllCops:
   Exclude:
     - bin/**/*
 
-# LINT
+# Layout
+
+Layout/AlignParameters:
+  Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideBrackets:
+  Enabled: false
+
+# Lint
 
 Lint/AmbiguousBlockAssociation:
   # `scope :name, -> (param) { ... }` is a valid syntax
@@ -19,8 +36,16 @@ Lint/NonLocalExitFromIterator:
 Lint/HandleExceptions:
   Enabled: false
 
+Lint/RescueType:
+  # It's generally useless, but why not?
+  Enabled: true
+
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
+
+Lint/ScriptPermission:
+  # checks +x on scripts
+  Enabled: true
 
 # Metrics
 
@@ -50,6 +75,9 @@ Metrics/PerceivedComplexity:
 
 # Performance
 
+Performance/Caller:
+  Enabled: true
+
 Performance/Casecmp:
   Enabled: false
 
@@ -68,6 +96,9 @@ RSpec/DescribedClass:
   Enabled: false
 
 RSpec/DescribeMethod:
+  Enabled: false
+
+RSpec/FilePath:
   Enabled: false
 
 RSpec/LetSetup:
@@ -96,9 +127,6 @@ RSpec/VerifiedDoubles:
 Style/AccessorMethodName:
   # This cop assumes every method is accessor
   Enabled: false
-
-Style/AlignParameters:
-  Enabled: true
 
 Style/AndOr:
   # `do_something and return`
@@ -131,6 +159,18 @@ Style/EmptyElse:
 Style/Encoding:
   Enabled: false
 
+Style/FormatStringToken:
+  # Bad
+  # [7] pry(main)> format "%{foo}", foo: 123
+  # => "123"
+  # Good
+  # [8] pry(main)> format "%<foo>s", foo: 123
+  # => "123"
+  # Also good
+  # [9] pry(main)> format "%<foo>f", foo: 123
+  # => "123.000000"
+  Enabled: true
+
 Style/IfUnlessModifier:
   Enabled: true
 
@@ -143,14 +183,17 @@ Style/LambdaCall:
 Style/ModuleFunction:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-
-Style/MultilineOperationIndentation:
-  Enabled: false
-
 Style/MultilineTernaryOperator:
   Enabled: false
+
+Style/MultipleComparison:
+  # Bad
+  # if foo == 1 || foo == 2
+  # Good
+  # [1, 2].include?(foo)
+  # With activesupport, this is better
+  # foo.in? [1, 2]
+  Enabled: true
 
 Style/NumericLiterals:
   Description: 'Use indent in groups of 3 unlesss you meet project-specific rule'
@@ -179,8 +222,6 @@ Style/RegexpLiteral:
 Style/RescueModifier:
   Enabled: false
 
-Style/SpaceInLambdaLiteral:
-  EnforcedStyle: require_space
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
@@ -195,9 +236,6 @@ Style/SingleLineBlockParams:
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
-Style/SpaceInsideBrackets:
-  Enabled: false
-
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
@@ -206,4 +244,8 @@ Style/TrailingCommaInLiteral:
 
 Style/TrivialAccessors:
   AllowPredicates: true
+  Enabled: false
+
+Style/YodaCondition:
+  # REVIEW: i sure that we don't need it
   Enabled: false

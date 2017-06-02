@@ -25,6 +25,13 @@ Metrics/MethodLength:
 Rails:
   Enabled: true
 
+Rails/ApplicationJob:
+  Enabled: true
+
+Rails/ApplicationRecord:
+  # Use it even you use Sequel
+  Enabled: true
+
 Rails/Delegate:
   Enabled: false
 
