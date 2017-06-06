@@ -145,6 +145,7 @@ rules:
   no-restricted-syntax:
     - error
     - ForOfStatement
+    - ForInStatement
   no-return-assign:
     - error
     - except-parens
