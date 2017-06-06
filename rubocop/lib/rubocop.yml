@@ -236,6 +236,19 @@ Style/SingleLineBlockParams:
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
+Style/SymbolArray:
+  # Be consistent
+  # Good, array of symbols expected
+  # :foo.in? &i[foo bar]
+  # Good, link_to receives array of generic objects
+  # link_to [:admin, :users]
+  # Good, if second is not a symbol array, first is not expected to be
+  # [
+  #   [:foo, :bar]
+  #   [:boo, :bar, baz: true]
+  # ]
+  Enabled: false
+
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
