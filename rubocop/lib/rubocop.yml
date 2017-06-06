@@ -10,7 +10,7 @@ Layout/AlignParameters:
   Enabled: true
 
 Layout/MultilineMethodCallIndentation:
-  Enabled: true
+  Enabled: false
 
 Layout/MultilineOperationIndentation:
   Enabled: false
