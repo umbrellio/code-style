@@ -22,6 +22,12 @@ Layout/SpaceInLambdaLiteral:
 Layout/SpaceInsideBrackets:
   Enabled: false
 
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
 # Lint
 
 Lint/AmbiguousBlockAssociation:
