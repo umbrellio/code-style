@@ -226,7 +226,7 @@ rules:
   prefer-template: error
   quotes:
     - error
-    - single
+    - double
     - avoidEscape: true
       allowTemplateLiterals: true
   quote-props:
