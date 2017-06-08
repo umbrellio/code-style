@@ -23,6 +23,16 @@ Layout/SpaceInsideBrackets:
   Enabled: false
 
 Layout/IndentArray:
+  # Good
+  # foo([
+  #   :first,
+  #   :second,
+  # ])
+  # Bad
+  # foo([
+  #       :first,
+  #       :second
+  #     ])
   EnforcedStyle: consistent
 
 Layout/IndentHash:
