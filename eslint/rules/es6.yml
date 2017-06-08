@@ -1,6 +1,9 @@
 rules:
   accessor-pairs: error
   array-callback-return: error
+  arrow-parens:
+    - error
+    - as-needed
   arrow-spacing:
     - error
     - before: true
