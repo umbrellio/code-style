@@ -1,7 +1,7 @@
 rules:
   jsx-quotes:
     - error
-    - prefer-single
+    - prefer-double
 
   react/jsx-boolean-value: error
   react/jsx-closing-bracket-location: error
