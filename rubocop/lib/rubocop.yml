@@ -95,6 +95,8 @@ RSpec/AnyInstance:
 
 RSpec/ExampleLength:
   Max: 20
+  Exclude:
+    - spec/features/**/*
 
 RSpec/DescribeClass:
   Enabled: false
