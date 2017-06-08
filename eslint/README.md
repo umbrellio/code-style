@@ -10,7 +10,7 @@ yarn add -D eslint-config-umbrellio
 Install peer dependencies if you already haven't:
 
 ```
-yarn add -D eslint-plugin-import eslint-plugin-node eslint-plugin-prefer-object-spread eslint-plugin-promise eslint-plugin-curry
+yarn add -D eslint-plugin-import eslint-plugin-node eslint-plugin-prefer-object-spread eslint-plugin-promise
 ```
 
 Add `umbrellio` to "extends" section of ESLint config:
