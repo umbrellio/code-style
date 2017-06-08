@@ -53,20 +53,7 @@ Rails/SaveBang:
   Enabled: true
 
 Rails/SkipsModelValidations:
-  Enabled: true
-  Blacklist:
-    - decrement!
-    - decrement_counter
-    - increment!
-    - increment_counter
-    - toggle!
-    - touch
-    # allow update_all
-    # - update_all
-    - update_attribute
-    - update_column
-    - update_columns
-    - update_counters
+  Enabled: false
 
 # Style
 
