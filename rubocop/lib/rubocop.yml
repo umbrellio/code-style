@@ -131,6 +131,11 @@ RSpec/ScatteredSetup:
 RSpec/VerifiedDoubles:
   Enabled: false
 
+# Security
+
+Security/YAMLLoad:
+  Enabled: false
+
 # Style
 
 Style/AccessorMethodName:
