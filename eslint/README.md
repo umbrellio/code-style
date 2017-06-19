@@ -27,6 +27,7 @@ You can also enable optional configs:
 {
   "extends": [
     "umbrellio",
+    "umbrellio/browser",
     "umbrellio/flow",
     "umbrellio/react",
     "umbrellio/jest"
