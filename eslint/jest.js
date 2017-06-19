@@ -1,4 +1,4 @@
 module.exports = {
-  plugins: ['jest'],
-  extends: ['./rules/jest'].map(require.resolve),
+  plugins: ["jest"],
+  extends: ["./rules/jest"].map(require.resolve),
 }
