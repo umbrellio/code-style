@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## master
 ### Added
 - Separate browser config.
+### Changed
+- Set `props` to `true` for `no-param-reassign` rule.
 
 ## [0.4.3] - 2017-06-08
 ### Changed

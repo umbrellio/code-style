@@ -139,7 +139,9 @@ rules:
   no-obj-calls: error
   no-octal: error
   no-octal-escape: error
-  no-param-reassign: error
+  no-param-reassign:
+    - error
+    - props: true
   no-path-concat: error
   no-plusplus: error
   no-proto: error
