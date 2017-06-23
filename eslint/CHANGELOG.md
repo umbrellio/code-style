@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## master
+## [0.4.4] - 2017-06-23
+### Added
+- Set `error` for `no-alert` and `no-console` rules.
+### Changed
+- Delete browser config with `no-restricted-globals` rule.
+
 ### Added
 - Separate browser config.
 ### Changed
