@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.1.1.1] - PENDING
+### Changed
+- Updated ESLint to 4.1.1.
+- Updated `eslint-plugin-flowtype` to `2.34.1`.
+- Updated `eslint-plugin-import` to `2.6.1`.
+- Updated `eslint-plugin-jest` to `20.0.3`.
+- Updated `eslint-plugin-jsx-a11y` to `6.0.2`.
+- Updated `eslint-plugin-node` to `5.1.0`.
+- Updated `yamljs` to `0.3.0`.
+- Enabled `switch-colon-spacing` and `no-buffer-constructor` rules.
+
 ## [0.4.4] - 2017-06-23
 ### Added
 - Set `error` for `no-alert` and `no-console` rules.

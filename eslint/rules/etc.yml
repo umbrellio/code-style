@@ -1,4 +1,6 @@
 rules:
+  no-buffer-constructor: error
+
   prefer-object-spread/prefer-object-spread: error
 
   node/no-deprecated-api: error
