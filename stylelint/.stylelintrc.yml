@@ -106,7 +106,7 @@ rules:
   selector-list-comma-space-before: never
   # Rules
   rule-empty-line-before:
-    - null # temporary (change to 'always' later)
+    - always
     - ignore:
       - after-comment
       - inside-block

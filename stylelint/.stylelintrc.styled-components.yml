@@ -1,0 +1,7 @@
+extends: stylelint-config-umbrellio/.stylelintrc.yml
+rules:
+  rule-empty-line-before: null
+  value-keyword-case: null
+  declaration-block-semicolon-newline-after: null
+  string-quotes: double
+

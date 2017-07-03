@@ -1,10 +1,11 @@
 {
   "name": "stylelint-config-umbrellio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stylelint config used for Umbrellio projects",
   "main": ".stylelintrc.yml",
   "files": [
-    ".stylelintrc.yml"
+    ".stylelintrc.yml",
+    ".stylelintrc.styled-components.yml"
   ],
   "keywords": [
     "stylelint",
