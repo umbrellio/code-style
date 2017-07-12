@@ -224,6 +224,10 @@ Style/NumericLiterals:
   Description: 'Use indent in groups of 3 unlesss you meet project-specific rule'
   Enabled: false
 
+Style/NumericPredicate:
+  Description: 'Use `index.zero?` instead of `index == 0`.'
+  Enabled: false
+
 Style/ParallelAssignment:
   Enabled: false
 
