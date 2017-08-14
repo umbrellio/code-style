@@ -4,11 +4,7 @@ inherit_gem:
 # Metrics
 
 Metrics/BlockLength:
-  # TODO: use 'ExcludedMethods' config which is more selective
-  Exclude:
-    - config/initializers/**/*
-    - config/routes.rb
-    - spec/**/*
+  Enabled: false
 
 Metrics/LineLength:
   Exclude:
