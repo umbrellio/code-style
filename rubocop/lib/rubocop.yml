@@ -138,6 +138,9 @@ RSpec/FilePath:
 RSpec/LetSetup:
   Enabled: false
 
+RSpec/MessageChain:
+  Enabled: false
+
 RSpec/MessageSpies:
   Enabled: false
 
