@@ -96,6 +96,8 @@ Metrics/LineLength:
   Max: 100
   AllowHeredoc: false
   AllowURI: false
+  Exclude:
+    - Gemfile
 
 Metrics/MethodLength:
   Max: 20
