@@ -48,6 +48,18 @@ Lint/AmbiguousBlockAssociation:
 Lint/AmbiguousOperator:
   Enabled: false
 
+Lint/EmptyWhen:
+  # Good:
+  # case x
+  # when :foo
+  #   # return nil
+  # when :bar
+  #   :bar
+  # else
+  #   :baz
+  # end
+  Enabled: false
+
 Lint/NonLocalExitFromIterator:
   Enabled: false
 
