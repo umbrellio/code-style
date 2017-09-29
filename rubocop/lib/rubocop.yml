@@ -1,5 +1,4 @@
-inherit_gem:
-  rubocop-config-umbrellio: lib/rubocop.rspec.yml
+require: rubocop-rspec
 
 AllCops:
   Exclude:
@@ -10,6 +9,19 @@ AllCops:
 
 Layout/AlignParameters:
   Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  # We don't like this cop
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideBrackets:
+  Enabled: false
 
 Layout/IndentArray:
   # Good
@@ -26,19 +38,6 @@ Layout/IndentArray:
 
 Layout/IndentHash:
   EnforcedStyle: consistent
-
-Layout/MultilineMethodCallIndentation:
-  # We don't like this cop
-  Enabled: false
-
-Layout/MultilineOperationIndentation:
-  Enabled: false
-
-Layout/SpaceInLambdaLiteral:
-  EnforcedStyle: require_space
-
-Layout/SpaceInsideBrackets:
-  Enabled: false
 
 # Lint
 
@@ -70,10 +69,6 @@ Lint/HandleExceptions:
 Lint/RescueType:
   # It's generally useless, but why not?
   Enabled: true
-
-Lint/RescueWithoutErrorClass:
-  # We forced `rescue` over `rescue StandardError`
-  Enabled: false
 
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
@@ -109,17 +104,6 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Enabled: false
 
-# Naming
-
-Naming/AccessorMethodName:
-  # This cop assumes every method is accessor
-  Enabled: false
-
-Naming/PredicateName:
-  # `has_` is generally good
-  NamePrefixBlacklist:
-    - is_
-
 # Performance
 
 Performance/Caller:
@@ -128,10 +112,51 @@ Performance/Caller:
 Performance/Casecmp:
   Enabled: false
 
-# Performance
+# RSpec
 
-Performance/UnfreezeString:
-  Enabled: true
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 20
+  Exclude:
+    - spec/features/**/*
+
+RSpec/DescribeClass:
+  Enabled: false
+
+RSpec/DescribedClass:
+  Enabled: false
+
+RSpec/DescribeMethod:
+  Enabled: false
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageChain:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleDescribes:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/ScatteredSetup:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
 
 # Security
 
@@ -139,6 +164,10 @@ Security/YAMLLoad:
   Enabled: false
 
 # Style
+
+Style/AccessorMethodName:
+  # This cop assumes every method is accessor
+  Enabled: false
 
 Style/AndOr:
   # `do_something and return`
@@ -154,9 +183,6 @@ Style/CommentAnnotation:
 
 Style/ConditionalAssignment:
   Enabled: false
-
-Style/Dir:
-  Enabled: true
 
 Style/Documentation:
   Enabled: false
@@ -221,12 +247,14 @@ Style/PerlBackrefs:
   # Disable localy if realy neeeded
   Enabled: true
 
+Style/PredicateName:
+  # `has_` is generally good
+  NamePrefixBlacklist:
+    - is_
+
 Style/RaiseArgs:
   Description: 'Use `raise, ErrorClass` in all cases but not when you need ErrorClass constructor'
   Enabled: false
-
-Style/RedundantConditional:
-  Enabled: true
 
 Style/RegexpLiteral:
   EnforcedStyle: mixed
@@ -234,6 +262,7 @@ Style/RegexpLiteral:
 
 Style/RescueModifier:
   Enabled: false
+
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
