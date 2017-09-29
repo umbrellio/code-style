@@ -1,6 +1,34 @@
 require: rubocop-rspec
 
+AllCops:
+  RSpec/FactoryGirl:
+    Patterns:
+      - spec/factories.rb
+      - spec/factories/**/*.rb
+      - features/support/factories/**/*.rb
+
+# Capybara
+
+Capybara/CurrentPathExpectation:
+  Enabled: true
+
+Capybara/FeatureMethods:
+  Enabled: false
+
+# FactoryGirl
+
+FactoryGirl/DynamicAttributeDefinedStatically:
+  Enabled: true
+
 # RSpec
+
+RSpec/AlignLeftLetBrace:
+  # Never do it
+  Enabled: false
+
+RSpec/AlignRightLetBrace:
+  # Never do it
+  Enabled: false
 
 RSpec/AnyInstance:
   Enabled: false
@@ -19,8 +47,18 @@ RSpec/DescribedClass:
 RSpec/DescribeMethod:
   Enabled: false
 
+RSpec/ExpectInHook:
+  # try not to use expect in before / after / around blocks anyway
+  Enabled: false
+
 RSpec/FilePath:
   Enabled: false
+
+RSpec/InvalidPredicateMatcher:
+  Enabled: true
+
+RSpec/LetBeforeExamples:
+  Enabled: true
 
 RSpec/LetSetup:
   Enabled: false
@@ -37,7 +75,23 @@ RSpec/MultipleDescribes:
 RSpec/MultipleExpectations:
   Enabled: false
 
+RSpec/MultipleSubjects:
+  Enabled: true
+
 RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/ReturnFromStub:
+  # expect(foo).to receive(:bar) { :baz } # Bad
+  # expect(foo).to receive(:bar).and_return(:baz) # Good
+  # expect(foo).to receive(:bar).and_return { Time.current } # Good
+  Enabled: true
+
+RSpec/PredicateMatcher:
+  # Predicate matchers' error messages are shitty, we should not use them unless they aren't
+  # expect(foo).to be_nil # good
+  # expect(foo).to be_active # bad if foo.inspect takes 5 screens
+  # expect(foo.active?).to be_truthy # good
   Enabled: false
 
 RSpec/ScatteredSetup:
@@ -45,3 +99,6 @@ RSpec/ScatteredSetup:
 
 RSpec/VerifiedDoubles:
   Enabled: false
+
+RSpec/VoidExpect:
+  Enabled: true
