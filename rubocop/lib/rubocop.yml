@@ -1,4 +1,5 @@
-require: rubocop-rspec
+inherit_gem:
+  rubocop-config-umbrellio: lib/rubocop.rspec.yml
 
 AllCops:
   Exclude:
@@ -125,52 +126,6 @@ Performance/Caller:
   Enabled: true
 
 Performance/Casecmp:
-  Enabled: false
-
-# RSpec
-
-RSpec/AnyInstance:
-  Enabled: false
-
-RSpec/ExampleLength:
-  Max: 20
-  Exclude:
-    - spec/features/**/*
-
-RSpec/DescribeClass:
-  Enabled: false
-
-RSpec/DescribedClass:
-  Enabled: false
-
-RSpec/DescribeMethod:
-  Enabled: false
-
-RSpec/FilePath:
-  Enabled: false
-
-RSpec/LetSetup:
-  Enabled: false
-
-RSpec/MessageChain:
-  Enabled: false
-
-RSpec/MessageSpies:
-  Enabled: false
-
-RSpec/MultipleDescribes:
-  Enabled: false
-
-RSpec/MultipleExpectations:
-  Enabled: false
-
-RSpec/NestedGroups:
-  Enabled: false
-
-RSpec/ScatteredSetup:
-  Enabled: false
-
-RSpec/VerifiedDoubles:
   Enabled: false
 
 # Performance
