@@ -10,19 +10,6 @@ AllCops:
 Layout/AlignParameters:
   Enabled: true
 
-Layout/MultilineMethodCallIndentation:
-  # We don't like this cop
-  Enabled: false
-
-Layout/MultilineOperationIndentation:
-  Enabled: false
-
-Layout/SpaceInLambdaLiteral:
-  EnforcedStyle: require_space
-
-Layout/SpaceInsideBrackets:
-  Enabled: false
-
 Layout/IndentArray:
   # Good
   # foo([
@@ -38,6 +25,19 @@ Layout/IndentArray:
 
 Layout/IndentHash:
   EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  # We don't like this cop
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/SpaceInsideBrackets:
+  Enabled: false
 
 # Lint
 
@@ -69,6 +69,10 @@ Lint/HandleExceptions:
 Lint/RescueType:
   # It's generally useless, but why not?
   Enabled: true
+
+Lint/RescueWithoutErrorClass:
+  # We forced `rescue` over `rescue StandardError`
+  Enabled: false
 
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
@@ -103,6 +107,17 @@ Metrics/MethodLength:
 
 Metrics/PerceivedComplexity:
   Enabled: false
+
+# Naming
+
+Naming/AccessorMethodName:
+  # This cop assumes every method is accessor
+  Enabled: false
+
+Naming/PredicateName:
+  # `has_` is generally good
+  NamePrefixBlacklist:
+    - is_
 
 # Performance
 
@@ -158,16 +173,17 @@ RSpec/ScatteredSetup:
 RSpec/VerifiedDoubles:
   Enabled: false
 
+# Performance
+
+Performance/UnfreezeString:
+  Enabled: true
+
 # Security
 
 Security/YAMLLoad:
   Enabled: false
 
 # Style
-
-Style/AccessorMethodName:
-  # This cop assumes every method is accessor
-  Enabled: false
 
 Style/AndOr:
   # `do_something and return`
@@ -183,6 +199,9 @@ Style/CommentAnnotation:
 
 Style/ConditionalAssignment:
   Enabled: false
+
+Style/Dir:
+  Enabled: true
 
 Style/Documentation:
   Enabled: false
@@ -247,14 +266,12 @@ Style/PerlBackrefs:
   # Disable localy if realy neeeded
   Enabled: true
 
-Style/PredicateName:
-  # `has_` is generally good
-  NamePrefixBlacklist:
-    - is_
-
 Style/RaiseArgs:
   Description: 'Use `raise, ErrorClass` in all cases but not when you need ErrorClass constructor'
   Enabled: false
+
+Style/RedundantConditional:
+  Enabled: true
 
 Style/RegexpLiteral:
   EnforcedStyle: mixed
@@ -262,7 +279,6 @@ Style/RegexpLiteral:
 
 Style/RescueModifier:
   Enabled: false
-
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
