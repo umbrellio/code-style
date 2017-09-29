@@ -31,6 +31,9 @@ Rails/Delegate:
 Rails/HasAndBelongsToMany:
   Enabled: false
 
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
 Rails/HttpPositionalArguments:
   # rails 5 feature https://github.com/bbatsov/rubocop/issues/3629
   Enabled: false
