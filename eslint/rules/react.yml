@@ -32,7 +32,12 @@ rules:
       afterOpening: never
   react/jsx-uses-react: error
   react/jsx-uses-vars: error
-  react/jsx-wrap-multilines: error
+  react/jsx-wrap-multilines:
+    - error
+    - declaration: true
+      assignment: true
+      return: true
+      arrow: false
   react/no-did-update-set-state: error
   react/no-is-mounted: error
   react/no-string-refs: error

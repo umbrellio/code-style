@@ -3,13 +3,6 @@ inherit_gem:
 
 # Metrics
 
-Metrics/BlockLength:
-  # TODO: use 'ExcludedMethods' config which is more selective
-  Exclude:
-    - config/initializers/**/*
-    - config/routes.rb
-    - spec/**/*
-
 Metrics/LineLength:
   Exclude:
     - config/environments/*
@@ -36,6 +29,9 @@ Rails/Delegate:
   Enabled: false
 
 Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
   Enabled: false
 
 Rails/HttpPositionalArguments:
