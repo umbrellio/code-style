@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.8.0] - PENDING
+### Changed
+- Updated ESLint to 4.8.0.
+- Updated all ESLint plugins.
+- Updated `yamljs` to `0.3.0`.
+- Enabled `switch-colon-spacing` and `no-buffer-constructor` rules.
+
 ## [0.4.5] - 2017-07-25
 ### Changed
 - Set `arrow` to `false` for `react/jsx-wrap-multilines` rule.

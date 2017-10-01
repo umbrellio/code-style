@@ -270,6 +270,10 @@ rules:
         balanced: true
         markers: ['*package', '!', ',', ':', '::', 'flow-include']
         exceptions: ['*']
+  switch-colon-spacing:
+    - error
+    - after: true
+      before: false
   symbol-description: error
   template-curly-spacing:
     - error
