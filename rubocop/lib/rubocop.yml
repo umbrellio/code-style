@@ -15,7 +15,7 @@ Layout/ClassStructure:
   Enabled: true
 
 Layout/EmptyLinesAroundArguments:
-  # Conflicts with memery / memoist
+  # Conflicts with memery / memoist, try to enable after next rubocop upgrade
   Enabled: false
 
 Layout/IndentArray:
