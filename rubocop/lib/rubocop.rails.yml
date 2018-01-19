@@ -25,6 +25,10 @@ Rails/ApplicationRecord:
   # Use it even you use Sequel
   Enabled: true
 
+Rails/CreateTableWithTimestamps:
+  # Conflicts with Sequel
+  Enabled: false
+
 Rails/Delegate:
   Enabled: false
 
@@ -50,6 +54,13 @@ Rails/SaveBang:
 
 Rails/SkipsModelValidations:
   Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - production
 
 # Style
 

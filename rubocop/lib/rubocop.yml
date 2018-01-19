@@ -11,6 +11,13 @@ AllCops:
 Layout/AlignParameters:
   Enabled: true
 
+Layout/ClassStructure:
+  Enabled: true
+
+Layout/EmptyLinesAroundArguments:
+  # Conflicts with memery / memoist, try to enable after next rubocop upgrade
+  Enabled: false
+
 Layout/IndentArray:
   # Good
   # foo([
@@ -37,7 +44,7 @@ Layout/MultilineOperationIndentation:
 Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
 
-Layout/SpaceInsideBrackets:
+Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: false
 
 # Lint
@@ -70,10 +77,6 @@ Lint/HandleExceptions:
 Lint/RescueType:
   # It's generally useless, but why not?
   Enabled: true
-
-Lint/RescueWithoutErrorClass:
-  # We forced `rescue` over `rescue StandardError`
-  Enabled: false
 
 Lint/ShadowingOuterLocalVariable:
   Enabled: false
@@ -187,7 +190,8 @@ Style/FormatStringToken:
   Enabled: true
 
 Style/IfUnlessModifier:
-  Enabled: true
+  # Doesn't work well with Metrics/LineLength
+  Enabled: false
 
 Style/GuardClause:
   Enabled: false
@@ -233,6 +237,10 @@ Style/RegexpLiteral:
   Enabled: true
 
 Style/RescueModifier:
+  Enabled: false
+
+Style/RescueStandardError:
+  # We forced `rescue` over `rescue StandardError`
   Enabled: false
 
 Style/StringLiterals:

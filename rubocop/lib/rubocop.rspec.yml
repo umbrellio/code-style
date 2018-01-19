@@ -1,7 +1,7 @@
 require: rubocop-rspec
 
 AllCops:
-  RSpec/FactoryGirl:
+  RSpec/FactoryBot:
     Patterns:
       - spec/factories.rb
       - spec/factories/**/*.rb
@@ -15,9 +15,9 @@ Capybara/CurrentPathExpectation:
 Capybara/FeatureMethods:
   Enabled: false
 
-# FactoryGirl
+# FactoryBot
 
-FactoryGirl/DynamicAttributeDefinedStatically:
+FactoryBot/DynamicAttributeDefinedStatically:
   Enabled: true
 
 # RSpec
@@ -45,6 +45,9 @@ RSpec/DescribedClass:
   Enabled: false
 
 RSpec/DescribeMethod:
+  Enabled: false
+
+RSpec/ContextWording:
   Enabled: false
 
 RSpec/ExpectInHook:
