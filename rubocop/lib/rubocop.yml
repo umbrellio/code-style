@@ -143,6 +143,9 @@ Security/YAMLLoad:
 
 # Style
 
+Style/AsciiComments:
+  Enabled: false
+
 Style/AndOr:
   # `do_something and return`
   Enabled: false
