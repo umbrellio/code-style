@@ -222,7 +222,7 @@ rules:
     - blocks: never
       switches: never
       classes: never
-  prefer-arrow-callback: error
+  prefer-arrow-callback: off
   prefer-const: error
   prefer-promise-reject-errors: error
   prefer-rest-params: error
