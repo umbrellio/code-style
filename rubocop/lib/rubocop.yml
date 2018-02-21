@@ -5,6 +5,7 @@ AllCops:
   Exclude:
     - bin/**/*
     - node_modules/**/*
+    - vendor/**/*
 
 # Layout
 
