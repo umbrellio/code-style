@@ -107,6 +107,7 @@ Metrics/LineLength:
   AllowURI: false
   Exclude:
     - Gemfile
+  IgnoredPatterns: ['#.*']
 
 Metrics/MethodLength:
   Max: 20
