@@ -2,6 +2,7 @@ inherit_gem:
   rubocop-config-umbrellio: lib/rubocop.rspec.yml
 
 AllCops:
+  DisplayCopNames: true
   Exclude:
     - bin/**/*
     - node_modules/**/*
