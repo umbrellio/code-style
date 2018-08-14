@@ -88,10 +88,6 @@ Lint/ScriptPermission:
   # checks +x on scripts
   Enabled: true
 
-Lint/SplatKeywordArguments:
-  # This cop is broken https://github.com/rubocop-hq/rubocop/issues/5887
-  Enabled: false
-
 # Metrics
 
 Metrics/AbcSize:
