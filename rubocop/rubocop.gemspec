@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
   spec.add_dependency "rubocop", "= 0.58.2"
-  spec.add_dependency "rubocop-rspec", "= 1.27.0"
+  spec.add_dependency "rubocop-rspec", "= 1.29.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
