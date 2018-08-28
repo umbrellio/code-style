@@ -15,11 +15,6 @@ Capybara/CurrentPathExpectation:
 Capybara/FeatureMethods:
   Enabled: false
 
-# FactoryBot
-
-FactoryBot/DynamicAttributeDefinedStatically:
-  Enabled: true
-
 # RSpec
 
 RSpec/AlignLeftLetBrace:
