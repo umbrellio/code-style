@@ -6,6 +6,10 @@ Gem::Specification.new do |spec|
   # x.y.z.t
   # Where x.y.z = rubocop version
   # t is incremental
+
+  # TODO: make as a separated gem hosted via rubygems
+  # TODO: rubocop-gem-non-related versioning
+
   spec.version = "0.58.2"
   spec.authors = ["JelF"]
   spec.email = ["begdory4@gmail.com"]
@@ -14,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/umbrellio/code-style"
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
-  spec.add_dependency "rubocop", "= 0.58.2"
-  spec.add_dependency "rubocop-rspec", "= 1.29.0"
+  spec.add_dependency "rubocop", "= 0.60.0"
+  spec.add_dependency "rubocop-rspec", "= 1.30.1"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
