@@ -7,10 +7,7 @@ Gem::Specification.new do |spec|
   # Where x.y.z = rubocop version
   # t is incremental
 
-  # TODO: make as a separated gem hosted via rubygems
-  # TODO: rubocop-gem-non-related versioning
-
-  spec.version = "0.58.2"
+  spec.version = "0.60.0"
   spec.authors = ["JelF"]
   spec.email = ["begdory4@gmail.com"]
 
