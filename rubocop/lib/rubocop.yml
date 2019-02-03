@@ -17,6 +17,9 @@ Layout/AlignParameters:
 Layout/ClassStructure:
   Enabled: true
 
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
 Layout/EmptyLinesAroundArguments:
   # Conflicts with memery / memoist, try to enable after next rubocop upgrade
   Enabled: false
