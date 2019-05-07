@@ -1,7 +1,7 @@
 # Umbrellio code style: rubocop-config-umbrellio
-When writing Ruby, we mostly follow this guide: https://github.com/airbnb/ruby.
-
 This gem provides default rubocop settings for Umbrellio projects.
+
+When writing Ruby, we mostly follow this guide: https://github.com/airbnb/ruby.
 
 ## Usage
 
