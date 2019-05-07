@@ -1,5 +1,7 @@
 inherit_gem:
-  rubocop-config-umbrellio: lib/rubocop.rspec.yml
+  rubocop-config-umbrellio:
+    - lib/rubocop.rspec.yml
+    - lib/rubocop.performance.yml
 
 AllCops:
   DisplayCopNames: true
@@ -24,7 +26,7 @@ Layout/EmptyLinesAroundArguments:
   # Conflicts with memery / memoist, try to enable after next rubocop upgrade
   Enabled: false
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   # Good
   # foo([
   #   :first,
@@ -37,7 +39,7 @@ Layout/IndentArray:
   #     ])
   EnforcedStyle: consistent
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
@@ -128,19 +130,6 @@ Naming/PredicateName:
   # `has_` is generally good
   NamePrefixBlacklist:
     - is_
-
-# Performance
-
-Performance/Caller:
-  Enabled: true
-
-Performance/Casecmp:
-  Enabled: false
-
-# Performance
-
-Performance/UnfreezeString:
-  Enabled: true
 
 # Security
 
