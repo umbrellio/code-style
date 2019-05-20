@@ -12,7 +12,8 @@ matrix:
     - bundle exec rake rubocop
     deploy:
       provider: rubygems
-      api_key: SOON-SOON-SOON
+      api_key:
+        secure: T4jc7w1617biNk8VzpDydbieT36JOEVMH1Yfbq0FJdMcQZyovxrIged4I6zjaZn/m9JuQ2oTMei/lWtRjKbY8BynWhRMWrzPsdvojP/Q9Wet/nK8teyIYG+ibuHfRpHGaWOHacSvjROMMxo/pHOwNlEvYgR5xILr2UAQcNWXgjjobYoXxgghfx7MUoylzr6zl5T+upg7XbJ94jrEZSeyStjgeU0o9oObIkx2FveuXovqX1ftMEBm/ion6d5mc5+e1JQFDwfsoHtnVKsVqnmWMnlPrJWzCqyKUcdk8qXeuNZp+7FRSaacAEXRbo1s1gGoaU8wKbw+CgXQTbgIknsNSmyOIU2wZKAGbZd6P9jdY4COR4GTx/MHXoCd6pXR3upydGWfOQ39fnl5g49Fs4ijWtnU0Oxl7/5zC77nxHbxCqZi06EJq9k85Pkks1rshJp3nan3nBAQRcvi0WU0oR2PRGIDJa6hzRHakbJGzRBUah+T1vw6ciKUwJX2LjNy05qBqt7Z8507LF5We5UPE1+GK0Yy3MEmrcsTOYj/e+/9pSIPYrX+E0pRH/Gm2ChOQkm1ihaUIkugFw8NEZ5rFV9kyg4qGU4XINPNa4SaEA2ds4QDcOVPPlqHfR3LGeLgW1VKubsvxMwdjPq3JjSRfGSdXqQSnr9e5BKyR3euTj2ZSjY=
       gemspec: rubocop.gemspec
       on:
         branch: master

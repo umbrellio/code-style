@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   # Where x.y.z = rubocop version
   # t is incremental
 
-  spec.version = "0.69.0"
+  spec.version = "0.69.0rc1"
   spec.authors = ["Umbrellio"]
   spec.email = ["info@umbrellio.biz"]
 
