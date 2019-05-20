@@ -1,3 +1,15 @@
 # frozen_string_literal: true
 
 require "bundler/gem_tasks"
+require "rubocop/rake_task"
+require "rubocop"
+require "rubocop-performance"
+require "rubocop-rspec"
+
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = %w[--config ./rubocop.yml]
+  t.requires << "rubocop-rspec"
+  t.requires << "rubocop-performance"
+end
+
+task default: :rubocop

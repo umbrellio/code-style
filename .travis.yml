@@ -1,0 +1,12 @@
+matrix:
+  include:
+  - language: ruby
+    rvm: 2.6.3
+    sudo: false
+    cache: bandler
+    before_script:
+    - cd rubocop
+    - gem install bundler
+    - bundle install --path vendor/bundle
+    script:
+    - bundle exec rake rubocop

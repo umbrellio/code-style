@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   # Where x.y.z = rubocop version
   # t is incremental
 
-  spec.version = "0.68.1"
+  spec.version = "0.69.0"
   spec.authors = ["Umbrellio"]
   spec.email = ["info@umbrellio.biz"]
 
@@ -15,9 +15,9 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/umbrellio/code-style"
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
-  spec.add_dependency "rubocop", "= 0.68.1"
-  spec.add_dependency "rubocop-performance", "= 1.2.0"
-  spec.add_dependency "rubocop-rspec", "= 1.32.0"
+  spec.add_dependency "rubocop", "= 0.69.0"
+  spec.add_dependency "rubocop-performance", "= 1.3.0"
+  spec.add_dependency "rubocop-rspec", "= 1.33.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
