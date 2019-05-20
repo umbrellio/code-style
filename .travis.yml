@@ -10,3 +10,9 @@ matrix:
     - bundle install --path vendor/bundle
     script:
     - bundle exec rake rubocop
+    deploy:
+      provider: rubygems
+      api_key: SOON-SOON-SOON
+      gemspec: rubocop.gemspec
+      on:
+        branch: master
