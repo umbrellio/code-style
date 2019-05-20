@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   # t is incremental
 
   spec.version = "0.68.1"
-  spec.authors = ["JelF"]
-  spec.email = ["begdory4@gmail.com"]
+  spec.authors = ["Umbrellio"]
+  spec.email = ["info@umbrellio.biz"]
 
   spec.summary = "This gem provides default rubocop settings for Umbrellio projects"
   spec.homepage = "https://github.com/umbrellio/code-style"
