@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 
   spec.version = "0.69.0rc1"
   spec.authors = ["Umbrellio"]
-  spec.email = ["info@umbrellio.biz"]
+  spec.email = ["oss@umbrellio.biz"]
 
   spec.summary = "This gem provides default rubocop settings for Umbrellio projects"
   spec.homepage = "https://github.com/umbrellio/code-style"
