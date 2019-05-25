@@ -1,6 +1,6 @@
 # UMBRELLIO code-style
 
-Various linter settings used in [Umbrellio](https://umbrellio.biz) projects.
+Linter settings used in [Umbrellio](https://umbrellio.biz) projects.
 
 ---
 
@@ -9,6 +9,14 @@ Various linter settings used in [Umbrellio](https://umbrellio.biz) projects.
 * [stylelint](https://github.com/umbrellio/code-style/tree/master/stylelint)
 
 ---
+
+## Contributing
+
+- Fork it: (`https://github.com/umbrellio/code-style/fork`)
+- Create your feature branch (`git checkout -b feature/my-new-feature`)
+- Commit your changes (`git commit -am 'Add some feature'`)
+- Push to the branch (`git push origin feature/my-new-feature`)
+- Create new Pull Request
 
 ## License
 
