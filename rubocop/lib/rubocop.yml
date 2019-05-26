@@ -122,6 +122,9 @@ Metrics/PerceivedComplexity:
 
 # Naming
 
+Naming/RescuedExceptionsVariableName:
+  PreferredName: error
+
 Naming/AccessorMethodName:
   # This cop assumes every method is accessor
   Enabled: false
