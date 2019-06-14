@@ -1,6 +1,14 @@
 # eslint-config-umbrellio
 [![npm version](https://badge.fury.io/js/eslint-config-umbrellio.svg)](https://badge.fury.io/js/eslint-config-umbrellio)
 
+### Package Versioning (Semver)
+
+Example: 5.29.0
+
+**5** - Major ESlint Version
+**29** - development updates and dependencies updates
+**0** - patches and bug fixes
+
 ### Installation
 with [yarn](https://github.com/yarnpkg/yarn/):
 
