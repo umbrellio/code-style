@@ -1,7 +1,6 @@
 {
   "extends": [
     "./index.js",
-    "./browser.js",
     "./flow.js",
     "./jest.js",
     "./react.js"
