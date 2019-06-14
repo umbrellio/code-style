@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-umbrellio",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "ESLint config for Umbrellio javascript code style",
   "main": "index.js",
   "keywords": [
