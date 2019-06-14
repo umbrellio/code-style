@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Changed
+- new versioning scheme
+- updated major dependencies (eslint 5.0 and other eslint suckers mozers pidorasers)
+
 ## [4.8.0] - PENDING
 ### Changed
 - Updated ESLint to 4.8.0.
