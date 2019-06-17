@@ -20,7 +20,6 @@ rules:
   function-name-case: lower
   function-parentheses-newline-inside: null
   function-parentheses-space-inside: never
-  function-url-data-uris: null
   function-url-no-scheme-relative: true
   function-url-quotes:
     - always
