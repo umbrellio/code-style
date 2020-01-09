@@ -3,12 +3,14 @@ require: rubocop-rails
 inherit_gem:
   rubocop-config-umbrellio: lib/rubocop.yml
 
-# Metrics
+# Layout
 
-Metrics/LineLength:
+Layout/LineLength:
   Exclude:
     - config/environments/*
     - lib/**/tasks/**/*
+
+# Metrics
 
 Metrics/MethodLength:
   Exclude:

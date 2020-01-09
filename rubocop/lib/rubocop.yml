@@ -13,9 +13,6 @@ AllCops:
 
 # Layout
 
-Layout/AlignParameters:
-  Enabled: true
-
 Layout/ClassStructure:
   Enabled: true
 
@@ -26,7 +23,7 @@ Layout/EmptyLinesAroundArguments:
   # Conflicts with memery / memoist, try to enable after next rubocop upgrade
   Enabled: false
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   # Good
   # foo([
   #   :first,
@@ -39,8 +36,15 @@ Layout/IndentFirstArrayElement:
   #     ])
   EnforcedStyle: consistent
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
+
+Layout/LineLength:
+  Max: 100
+  AllowHeredoc: false
+  AllowURI: false
+  Exclude:
+    - Gemfile
 
 Layout/MultilineMethodCallIndentation:
   # We don't like this cop
@@ -48,6 +52,9 @@ Layout/MultilineMethodCallIndentation:
 
 Layout/MultilineOperationIndentation:
   Enabled: false
+
+Layout/ParameterAlignment:
+  Enabled: true
 
 Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
@@ -79,9 +86,6 @@ Lint/EmptyWhen:
 Lint/NonLocalExitFromIterator:
   Enabled: false
 
-Lint/HandleExceptions:
-  Enabled: false
-
 Lint/RescueType:
   # It's generally useless, but why not?
   Enabled: true
@@ -92,6 +96,9 @@ Lint/ShadowingOuterLocalVariable:
 Lint/ScriptPermission:
   # checks +x on scripts
   Enabled: true
+
+Lint/SuppressedException:
+  Enabled: false
 
 # Metrics
 
@@ -106,13 +113,6 @@ Metrics/ClassLength:
 
 Metrics/CyclomaticComplexity:
   Enabled: false
-
-Metrics/LineLength:
-  Max: 100
-  AllowHeredoc: false
-  AllowURI: false
-  Exclude:
-    - Gemfile
 
 Metrics/MethodLength:
   Max: 20
@@ -131,7 +131,7 @@ Naming/AccessorMethodName:
 
 Naming/PredicateName:
   # `has_` is generally good
-  NamePrefixBlacklist:
+  ForbiddenPrefixes:
     - is_
 
 # Security
