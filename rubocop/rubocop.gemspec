@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  gem_version = "0.79.0"
+  gem_version = "0.81.0"
   release_version = ENV["TRAVIS"] ? "#{gem_version}.#{ENV["TRAVIS_BUILD_NUMBER"]}" : gem_version
 
   spec.name = "rubocop-config-umbrellio"
