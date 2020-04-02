@@ -86,6 +86,9 @@ Lint/EmptyWhen:
 Lint/NonLocalExitFromIterator:
   Enabled: false
 
+Lint/RaiseException:
+  Enabled: true
+
 Lint/RescueType:
   # It's generally useless, but why not?
   Enabled: true
@@ -95,6 +98,9 @@ Lint/ShadowingOuterLocalVariable:
 
 Lint/ScriptPermission:
   # checks +x on scripts
+  Enabled: true
+
+Lint/StructNewOverride:
   Enabled: true
 
 Lint/SuppressedException:
@@ -196,6 +202,15 @@ Style/IfUnlessModifier:
 
 Style/GuardClause:
   Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/LambdaCall:
   Enabled: false
