@@ -4,6 +4,7 @@ inherit_gem:
     - lib/rubocop.performance.yml
 
 AllCops:
+  NewCops: enable
   DisplayCopNames: true
   Exclude:
     - bin/**/*
