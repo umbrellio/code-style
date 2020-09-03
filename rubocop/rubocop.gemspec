@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = "~> 2.7.0"
+  spec.required_ruby_version = ">= 2.5.0"
 
   gem_version = "0.90.0"
   release_version = ENV["TRAVIS"] ? "#{gem_version}.#{ENV["TRAVIS_BUILD_NUMBER"]}" : gem_version
