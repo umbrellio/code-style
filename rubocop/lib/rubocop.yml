@@ -57,6 +57,9 @@ Layout/MultilineOperationIndentation:
 Layout/ParameterAlignment:
   Enabled: true
 
+Layout/SpaceBeforeBrackets:
+  Enabled: false # currently broken for cases like `add_primary_key [:some_id]`
+
 Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
 
