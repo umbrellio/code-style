@@ -1,18 +1,11 @@
 require: rubocop-rspec
 
-AllCops:
-  RSpec/FactoryBot:
-    Patterns:
-      - spec/factories.rb
-      - spec/factories/**/*.rb
-      - features/support/factories/**/*.rb
-
 # Capybara
 
-Capybara/CurrentPathExpectation:
+RSpec/Capybara/CurrentPathExpectation:
   Enabled: true
 
-Capybara/FeatureMethods:
+RSpec/Capybara/FeatureMethods:
   Enabled: false
 
 # RSpec
@@ -49,11 +42,17 @@ RSpec/ExpectInHook:
   # try not to use expect in before / after / around blocks anyway
   Enabled: false
 
+RSpec/FactoryBot:
+  Patterns:
+    - spec/factories.rb
+    - spec/factories/**/*.rb
+    - features/support/factories/**/*.rb
+
 RSpec/FilePath:
   Enabled: false
 
-RSpec/InvalidPredicateMatcher:
-  Enabled: true
+RSpec/LeadingSubject:
+  Enabled: false # Context includes look better at the top of context, I think
 
 RSpec/LetBeforeExamples:
   Enabled: true
@@ -75,6 +74,9 @@ RSpec/MultipleExpectations:
 
 RSpec/MultipleSubjects:
   Enabled: true
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false # No idea how to limit amount of lets
 
 RSpec/NestedGroups:
   Enabled: false

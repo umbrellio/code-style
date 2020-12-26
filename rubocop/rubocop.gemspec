@@ -2,7 +2,9 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  gem_version = "0.79.0"
+  spec.required_ruby_version = ">= 2.5.0"
+
+  gem_version = "1.7.0"
   release_version = ENV["TRAVIS"] ? "#{gem_version}.#{ENV["TRAVIS_BUILD_NUMBER"]}" : gem_version
 
   spec.name = "rubocop-config-umbrellio"
@@ -14,10 +16,12 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/umbrellio/code-style"
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
-  spec.add_dependency "rubocop", "= 0.79.0"
-  spec.add_dependency "rubocop-performance", "= 1.5.2"
-  spec.add_dependency "rubocop-rails", "= 2.4.1"
-  spec.add_dependency "rubocop-rspec", "= 1.37.1"
+  spec.add_dependency "rubocop", "= 1.7.0"
+  spec.add_dependency "rubocop-performance", "= 1.9.1"
+  spec.add_dependency "rubocop-rails", "= 2.9.1"
+  spec.add_dependency "rubocop-rake", "= 0.5.1"
+  spec.add_dependency "rubocop-rspec", "= 2.1.0"
+  spec.add_dependency "rubocop-sequel", "= 0.1.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
