@@ -4,6 +4,7 @@ inherit_gem:
     - lib/rubocop.performance.yml
 
 AllCops:
+  NewCops: enable
   DisplayCopNames: true
   Exclude:
     - bin/**/*
@@ -12,9 +13,6 @@ AllCops:
     - tmp/**/*
 
 # Layout
-
-Layout/AlignParameters:
-  Enabled: true
 
 Layout/ClassStructure:
   Enabled: true
@@ -26,7 +24,7 @@ Layout/EmptyLinesAroundArguments:
   # Conflicts with memery / memoist, try to enable after next rubocop upgrade
   Enabled: false
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   # Good
   # foo([
   #   :first,
@@ -39,8 +37,15 @@ Layout/IndentFirstArrayElement:
   #     ])
   EnforcedStyle: consistent
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
+
+Layout/LineLength:
+  Max: 100
+  AllowHeredoc: false
+  AllowURI: false
+  Exclude:
+    - Gemfile
 
 Layout/MultilineMethodCallIndentation:
   # We don't like this cop
@@ -48,6 +53,12 @@ Layout/MultilineMethodCallIndentation:
 
 Layout/MultilineOperationIndentation:
   Enabled: false
+
+Layout/ParameterAlignment:
+  Enabled: true
+
+Layout/SpaceBeforeBrackets:
+  Enabled: false # currently broken for cases like `add_primary_key [:some_id]`
 
 Layout/SpaceInLambdaLiteral:
   EnforcedStyle: require_space
@@ -79,8 +90,8 @@ Lint/EmptyWhen:
 Lint/NonLocalExitFromIterator:
   Enabled: false
 
-Lint/HandleExceptions:
-  Enabled: false
+Lint/RaiseException:
+  Enabled: true
 
 Lint/RescueType:
   # It's generally useless, but why not?
@@ -92,6 +103,12 @@ Lint/ShadowingOuterLocalVariable:
 Lint/ScriptPermission:
   # checks +x on scripts
   Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/SuppressedException:
+  Enabled: false
 
 # Metrics
 
@@ -106,13 +123,6 @@ Metrics/ClassLength:
 
 Metrics/CyclomaticComplexity:
   Enabled: false
-
-Metrics/LineLength:
-  Max: 100
-  AllowHeredoc: false
-  AllowURI: false
-  Exclude:
-    - Gemfile
 
 Metrics/MethodLength:
   Max: 20
@@ -131,7 +141,7 @@ Naming/AccessorMethodName:
 
 Naming/PredicateName:
   # `has_` is generally good
-  NamePrefixBlacklist:
+  ForbiddenPrefixes:
     - is_
 
 # Security
@@ -196,6 +206,15 @@ Style/IfUnlessModifier:
 
 Style/GuardClause:
   Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/LambdaCall:
   Enabled: false
