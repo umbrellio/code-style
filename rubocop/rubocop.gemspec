@@ -16,12 +16,12 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/umbrellio/code-style"
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
-  spec.add_dependency "rubocop", "= 1.7.0"
-  spec.add_dependency "rubocop-performance", "= 1.9.1"
+  spec.add_dependency "rubocop", "= 1.11.0"
+  spec.add_dependency "rubocop-performance", "= 1.10.0"
   spec.add_dependency "rubocop-rails", "= 2.9.1"
   spec.add_dependency "rubocop-rake", "= 0.5.1"
-  spec.add_dependency "rubocop-rspec", "= 2.1.0"
-  spec.add_dependency "rubocop-sequel", "= 0.1.0"
+  spec.add_dependency "rubocop-rspec", "= 2.2.0"
+  spec.add_dependency "rubocop-sequel", "= 0.2.0"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
