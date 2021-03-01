@@ -3,6 +3,7 @@ name: Rubocop
 on: [push, pull_request]
 
 jobs:
+  # TODO: add job for autopushing to rubygems
   lint:
     runs-on: ubuntu-latest
 
