@@ -6,12 +6,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
+    # We want to run on external PRs, but not on our own internal PRs as they'll be run on push event
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != 'umbrellio/code-style'
+
     defaults:
       run:
         working-directory: rubocop
-
-    # We want to run on external PRs, but not on our own internal PRs as they'll be run on push event
-    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != 'umbrellio/code-style'
 
     steps:
     - uses: actions/checkout@v2
@@ -20,5 +20,6 @@ jobs:
       with:
         ruby-version: "3.0"
         bundler-cache: true
+        working-directory: rubocop
 
     - run: bundle exec rake
