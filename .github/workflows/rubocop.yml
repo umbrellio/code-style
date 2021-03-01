@@ -6,6 +6,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: rubocop
+
     # We want to run on external PRs, but not on our own internal PRs as they'll be run on push event
     if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != 'umbrellio/code-style'
 
