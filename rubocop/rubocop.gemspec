@@ -5,10 +5,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5.0"
 
   gem_version = "1.11.0"
-  release_version = ENV["TRAVIS"] ? "#{gem_version}.#{ENV["TRAVIS_BUILD_NUMBER"]}" : gem_version
+  release_version = "#{gem_version}.#{ENV["GITHUB_RUN_NUMBER"]}" if ENV["GITHUB_ACTIONS"]
 
   spec.name = "rubocop-config-umbrellio"
-  spec.version = release_version
+  spec.version = release_version || gem_version
   spec.authors = ["Umbrellio"]
   spec.email = ["oss@umbrellio.biz"]
 
