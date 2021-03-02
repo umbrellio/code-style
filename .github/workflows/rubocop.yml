@@ -1,0 +1,37 @@
+name: Rubocop
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    # We want to run on external PRs, but not on our own internal PRs as they'll be run on push event
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != 'umbrellio/code-style'
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.0"
+        bundler-cache: true
+        working-directory: rubocop
+
+    - run: cd rubocop && bundle exec rake
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment: Deploy
+
+    # Run on push to master branch
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: umbrellio/publish-ruby-gem-action@v1
+        with:
+          api-key: ${{secrets.RUBYGEMS_API_KEY}}
+          working-directory: rubocop
