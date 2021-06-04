@@ -34,5 +34,6 @@ jobs:
       - uses: umbrellio/publish-ruby-gem-action@v1.0.4
         with:
           api-key: ${{ secrets.RUBYGEMS_API_KEY }}
+          working-directory: rubocop
         env:
           PUBLISH_JOB: true
