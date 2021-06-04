@@ -31,7 +31,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: umbrellio/publish-ruby-gem-action@v1
+      - uses: umbrellio/publish-ruby-gem-action@v1.0.3
         with:
-          api-key: ${{secrets.RUBYGEMS_API_KEY}}
-          working-directory: rubocop
+          api-key: ${{ secrets.RUBYGEMS_API_KEY }}
+        env:
+          PUBLISH_JOB: true
