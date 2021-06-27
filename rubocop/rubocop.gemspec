@@ -4,7 +4,7 @@
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5.0"
 
-  rubocop_version = "1.11.0"
+  rubocop_version = "1.17.0"
   release_version = "#{rubocop_version}.#{ENV["GITHUB_RUN_NUMBER"]}" if ENV["PUBLISH_JOB"]
 
   spec.name = "rubocop-config-umbrellio"
