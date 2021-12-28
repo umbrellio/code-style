@@ -12,6 +12,9 @@ AllCops:
     - vendor/**/*
     - tmp/**/*
 
+Gemspec/RequireMFA:
+  Enabled: false
+
 # Layout
 
 Layout/ClassStructure:

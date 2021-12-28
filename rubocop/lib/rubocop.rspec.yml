@@ -43,7 +43,7 @@ RSpec/ExpectInHook:
   Enabled: false
 
 RSpec/FactoryBot:
-  Patterns:
+  Include:
     - spec/factories.rb
     - spec/factories/**/*.rb
     - features/support/factories/**/*.rb
