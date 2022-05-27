@@ -102,3 +102,12 @@ RSpec/VerifiedDoubles:
 
 RSpec/VoidExpect:
   Enabled: true
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/BeNil:
+  Enabled: false
+
+RSpec/ExpectChange:
+  Enabled: false
