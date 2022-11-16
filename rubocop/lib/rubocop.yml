@@ -4,7 +4,7 @@ inherit_gem:
     - lib/rubocop.performance.yml
 
 require:
-  - ./rubocop/lib/cop/perfomance/no_ampersand_for_intersection_check.rb
+  - ./cop/perfomance/no_ampersand_for_intersection_check.rb
 
 AllCops:
   NewCops: enable
