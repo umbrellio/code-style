@@ -3,9 +3,6 @@ inherit_gem:
     - lib/rubocop.rspec.yml
     - lib/rubocop.performance.yml
 
-require:
-  - ./cop/no_ampersand_for_intersection_check.rb
-
 AllCops:
   NewCops: enable
   DisplayCopNames: true
