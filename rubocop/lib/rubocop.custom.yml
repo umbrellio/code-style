@@ -1,0 +1,5 @@
+require:
+  - ./cop/no_ampersand_for_intersection_check.rb
+
+AllCops:
+  TargetRubyVersion: 3.1

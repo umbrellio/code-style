@@ -1,8 +1,5 @@
 inherit_gem:
   rubocop-config-umbrellio: lib/rubocop.yml
 
-require:
-  - ./lib/cop/no_ampersand_for_intersection_check.rb
-
 AllCops:
   TargetRubyVersion: 2.5
