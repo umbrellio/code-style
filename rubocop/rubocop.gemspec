@@ -4,7 +4,7 @@
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5.0"
 
-  rubocop_version = "1.42.0"
+  rubocop_version = "1.43.0"
 
   if ENV.fetch("PUBLISH_JOB", nil)
     release_version = "#{rubocop_version}.#{ENV.fetch("GITHUB_RUN_NUMBER")}"
