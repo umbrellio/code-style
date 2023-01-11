@@ -111,3 +111,6 @@ RSpec/BeNil:
 
 RSpec/ExpectChange:
   Enabled: false
+
+RSpec/NoExpectationExample:
+  Enabled: false

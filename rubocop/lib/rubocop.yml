@@ -2,6 +2,7 @@ inherit_gem:
   rubocop-config-umbrellio:
     - lib/rubocop.rspec.yml
     - lib/rubocop.performance.yml
+    - lib/rubocop.rake.yml
 
 AllCops:
   NewCops: enable
