@@ -2,7 +2,7 @@ require: rubocop-rspec
 
 # Capybara
 
-RSpec/Capybara/CurrentPathExpectation:
+Capybara/CurrentPathExpectation:
   Enabled: true
 
 RSpec/Capybara/FeatureMethods:
