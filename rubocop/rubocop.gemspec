@@ -4,7 +4,7 @@
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5.0"
 
-  rubocop_version = "1.50.0"
+  rubocop_version = "1.63.0"
 
   if ENV.fetch("PUBLISH_JOB", nil)
     release_version = "#{rubocop_version}.#{ENV.fetch("GITHUB_RUN_NUMBER")}"
@@ -22,12 +22,9 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
   spec.add_dependency "rubocop", "~> #{rubocop_version}"
-  spec.add_dependency "rubocop-performance", "~> 1.17.0"
-  spec.add_dependency "rubocop-rails", "~> 2.19.0"
+  spec.add_dependency "rubocop-performance", "~> 1.21.0"
+  spec.add_dependency "rubocop-rails", "~> 2.24.0"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
-  spec.add_dependency "rubocop-rspec", "~> 2.20.0"
+  spec.add_dependency "rubocop-rspec", "~> 2.29.0"
   spec.add_dependency "rubocop-sequel", "~> 0.3.3"
-
-  spec.add_development_dependency "bundler", "~> 2.2"
-  spec.add_development_dependency "rake", "~> 13.0"
 end

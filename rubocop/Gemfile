@@ -4,3 +4,6 @@ source "https://rubygems.org"
 
 # Specify your gem's dependencies in rubocop.gemspec
 gemspec
+
+gem "bundler", "~> 2.2"
+gem "rake", "~> 13.0"
