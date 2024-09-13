@@ -32,6 +32,7 @@ jobs:
 
     # Run on push to master branch
     # if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v4
