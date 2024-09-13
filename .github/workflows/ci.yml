@@ -12,14 +12,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - run: cd rubocop
-
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3
         bundler-cache: true
+        working-directory: rubocop
 
-    - run: bundle exec rake
+    - run: cd rubocop && bundle exec rake
 
   release-gem:
     runs-on: ubuntu-latest
@@ -36,11 +35,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: cd rubocop
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ruby
           bundler-cache: true
+          working-directory: rubocop
 
       - uses: rubygems/release-gem@v1
+        working-directory: rubocop
+
