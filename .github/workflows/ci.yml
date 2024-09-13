@@ -18,7 +18,6 @@ jobs:
       with:
         ruby-version: 3
         bundler-cache: true
-        working-directory: rubocop
 
     - run: bundle exec rake
 
