@@ -6,12 +6,8 @@ Gem::Specification.new do |spec|
 
   rubocop_version = "1.63.0"
 
-  if ENV.fetch("PUBLISH_JOB", nil)
-    release_version = "#{rubocop_version}.#{ENV.fetch("GITHUB_RUN_NUMBER")}"
-  end
-
   spec.name = "rubocop-config-umbrellio"
-  spec.version = release_version || rubocop_version
+  spec.version = rubocop_version
   spec.authors = ["Umbrellio"]
   spec.email = ["oss@umbrellio.biz"]
 
