@@ -42,5 +42,5 @@ jobs:
           working-directory: rubocop
 
       - uses: rubygems/release-gem@v1
-        working-directory: rubocop
-
+        with:
+          working-directory: rubocop
