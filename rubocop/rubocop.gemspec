@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
   spec.add_dependency "rubocop", "~> #{rubocop_version}"
+  spec.add_dependency "rubocop-factory_bot"
   spec.add_dependency "rubocop-performance", "~> 1.22.0"
   spec.add_dependency "rubocop-rails", "~> 2.26.0"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
