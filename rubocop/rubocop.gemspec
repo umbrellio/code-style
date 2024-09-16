@@ -2,9 +2,9 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = ">= 2.5.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
-  rubocop_version = "1.63.0"
+  rubocop_version = "1.66.0"
 
   if ENV.fetch("PUBLISH_JOB", nil)
     release_version = "#{rubocop_version}.#{ENV.fetch("GITHUB_RUN_NUMBER")}"
@@ -22,9 +22,10 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/rubocop.*.yml"] << "lib/rubocop.yml"
 
   spec.add_dependency "rubocop", "~> #{rubocop_version}"
-  spec.add_dependency "rubocop-performance", "~> 1.21.0"
-  spec.add_dependency "rubocop-rails", "~> 2.24.0"
+  spec.add_dependency "rubocop-factory_bot", "~> 2.26.0"
+  spec.add_dependency "rubocop-performance", "~> 1.22.0"
+  spec.add_dependency "rubocop-rails", "~> 2.26.0"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
-  spec.add_dependency "rubocop-rspec", "~> 2.29.0"
+  spec.add_dependency "rubocop-rspec", "~> 3.0.0"
   spec.add_dependency "rubocop-sequel", "~> 0.3.3"
 end

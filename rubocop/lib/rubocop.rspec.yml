@@ -1,12 +1,6 @@
-require: rubocop-rspec
-
-# Capybara
-
-Capybara/CurrentPathExpectation:
-  Enabled: true
-
-RSpec/Capybara/FeatureMethods:
-  Enabled: false
+require:
+  - rubocop-rspec
+  - rubocop-factory_bot
 
 # RSpec
 
@@ -42,13 +36,7 @@ RSpec/ExpectInHook:
   # try not to use expect in before / after / around blocks anyway
   Enabled: false
 
-RSpec/FactoryBot:
-  Include:
-    - spec/factories.rb
-    - spec/factories/**/*.rb
-    - features/support/factories/**/*.rb
-
-RSpec/FilePath:
+RSpec/SpecFilePathFormat:
   Enabled: false
 
 RSpec/LeadingSubject:
