@@ -1,6 +1,7 @@
 require:
   - rubocop-rspec
   - rubocop-factory_bot
+  - rubocop-rspec_rails
 
 # RSpec
 
