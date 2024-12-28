@@ -4,7 +4,7 @@
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.0.0"
 
-  rubocop_version = "1.66.0"
+  rubocop_version = "1.69.0"
 
   if ENV.fetch("PUBLISH_JOB", nil)
     release_version = "#{rubocop_version}.#{ENV.fetch("GITHUB_RUN_NUMBER")}"
@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rubocop", "~> #{rubocop_version}"
   spec.add_dependency "rubocop-factory_bot", "~> 2.26.0"
-  spec.add_dependency "rubocop-performance", "~> 1.22.0"
-  spec.add_dependency "rubocop-rails", "~> 2.26.0"
+  spec.add_dependency "rubocop-performance", "~> 1.23.0"
+  spec.add_dependency "rubocop-rails", "~> 2.28.0"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
-  spec.add_dependency "rubocop-rspec", "~> 3.0.0"
-  spec.add_dependency "rubocop-sequel", "~> 0.3.3"
+  spec.add_dependency "rubocop-rspec", "~> 3.3.0"
+  spec.add_dependency "rubocop-sequel", "~> 0.3.0"
 end
