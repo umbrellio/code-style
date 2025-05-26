@@ -8,8 +8,8 @@ require "rubocop-rspec"
 
 RuboCop::RakeTask.new(:rubocop) do |t|
   t.options = %w[--config ./.rubocop.yml]
-  t.requires << "rubocop-rspec"
-  t.requires << "rubocop-performance"
+  t.plugins << "rubocop-rspec"
+  t.plugins << "rubocop-performance"
 end
 
 task default: :rubocop
