@@ -143,7 +143,7 @@ Naming/AccessorMethodName:
   # This cop assumes every method is accessor
   Enabled: false
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   # `has_` is generally good
   ForbiddenPrefixes:
     - is_
